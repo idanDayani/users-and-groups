@@ -33,6 +33,9 @@ UserGroups.init(
         unique: true,
         fields: ["user_id", "group_id"],
       },
+      {
+        fields: ["group_id"], // Index for counting users in specific group
+      },
     ],
   }
 );
